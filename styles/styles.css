@@ -1,0 +1,31 @@
+:root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+}
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
+}
+body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 10px;
+}
+// so here I'm defining the CSS variables for light and dark themes because some people don't like to work in lightly area
+// I'm also defining the CSS variables for set the font family, background color, text color, and padding for the body element.
+.skip-link { position: absolute; top: -100px; left: 0; background: #2563eb; color: white; padding: 10px;}
+.skip-link:focus { top: 0; }
+main { display: flex; flex-direction: column; gap: 15px; }
+section { background: var(--card); padding: 15px; border-radius:6px; border: 1px solid #ccc; }
+form input, form select { width: 100%; padding: 8px; margin-top: 5px; }
+button {margin-top: 10px; padding: 6px 12px; cursor: pointer; }
+button:active { transform: scale(0.95); }
+// So in this part of the code, I'm just defining the styles for the budget tracker application.
+@media (min-width: 768px) { body { padding: 20px; } }
+@media (min-width: 1024px) {
+    main { display: grid; grid-template-columns: 1fr 1fr; }
+    #settings { grid-column: span 2; }
+}

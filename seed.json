@@ -1,0 +1,5 @@
+[
+    {"id":"rec_1","description":"Cafeteria lunch", "amount":12.50,"category":"Food","date":"2026-10-15"},
+    {"id":"rec_2","description":"Textbook Front end Development", "amount":85.00,"category":"Books","date":"2026-10-16"},
+    {"id":"rec_3","description":"Bus ticket", "amount":4.50,"category":"Trqnsport","date":"2026-10-17"},
+]
